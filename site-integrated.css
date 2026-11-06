@@ -98,7 +98,7 @@
 }
 .site-footer .footer-col>a[href*="wa.me/"]:hover{background:#70efa0!important;color:#032113!important}
 body:not(:has(.site-header .axi-wa-header)) .site-footer .footer-col>a[href*="wa.me/"]::before{
- content:"? WhatsApp";
+ content:"WhatsApp";
  display:flex;align-items:center;justify-content:center;
  position:fixed;right:210px;top:19px;z-index:1020;
  min-height:44px;padding:0 17px;
@@ -111,5 +111,5 @@ body:not(:has(.site-header .axi-wa-header)) .site-footer .footer-col>a[href*="wa
  body:not(:has(.site-header .axi-wa-header)) .site-footer .footer-col>a[href*="wa.me/"]::before{right:120px;top:14px;padding:0 12px;min-height:39px}
 }
 @media(max-width:560px){
- body:not(:has(.site-header .axi-wa-header)) .site-footer .footer-col>a[href*="wa.me/"]::before{right:78px;top:12px;font-size:10px;min-height:36px;padding:0 9px;content:"? WA"}
+ body:not(:has(.site-header .axi-wa-header)) .site-footer .footer-col>a[href*="wa.me/"]::before{right:78px;top:12px;font-size:10px;min-height:36px;padding:0 9px;content:"WA"}
 }
