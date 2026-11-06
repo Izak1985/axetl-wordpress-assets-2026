@@ -136,3 +136,35 @@ body.is-entering .mascot-stage{transform:translateX(-50%) scale(1.07);transition
 @media(max-width:560px){
   .scroll-indicator{bottom:1.2%;font-size:7px;letter-spacing:.11em;}
 }
+
+/* AX'ETL entry contact / discoverable service overview. */
+.topbar .axi-wa-entry{
+ position:relative;z-index:30;display:inline-flex;align-items:center;justify-content:center;
+ gap:9px;min-height:44px;padding:10px 20px;background:#25d366;color:#072918!important;
+ border:1px solid #25d366;border-radius:9px;text-decoration:none!important;
+ font:800 12px/1.3 "DM Sans",sans-serif;white-space:nowrap;
+ box-shadow:0 8px 30px rgba(18,148,74,.23);
+}
+.topbar .axi-wa-entry:hover{background:#73eca1;transform:translateY(-2px)}
+.topbar .axi-wa-entry:focus-visible{outline:3px solid #f1faff;outline-offset:4px}
+.enter-services{background:#061523;color:#e7f7fb;padding:clamp(62px,7vw,110px) 22px 80px;border-top:1px solid rgba(60,209,232,.24)}
+.enter-services-inner{max-width:1190px;margin:0 auto}
+.enter-services-eyebrow{font:800 11px/1.6 "DM Sans",sans-serif;letter-spacing:.18em;color:#32dcea;margin:0 0 18px}
+.enter-services h2{font:800 clamp(2.1rem,5vw,4.2rem)/1.1 "DM Sans",sans-serif;letter-spacing:-.055em;max-width:800px;color:#f1fcff;margin:0 0 22px}
+.enter-services-lead{font:400 clamp(15px,1.7vw,18px)/1.8 "DM Sans",sans-serif;color:#a9cedd;max-width:800px;margin:0 0 33px}
+.enter-services-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.enter-services-grid a{display:flex;flex-direction:column;gap:16px;min-height:188px;background:#0a2435;border:1px solid rgba(82,197,221,.25);padding:28px;color:#e5f8ff;text-decoration:none;transition:transform .2s,border .2s}
+.enter-services-grid a:hover{transform:translateY(-4px);border-color:#46dce8}
+.enter-services-grid strong{font:800 clamp(18px,1.8vw,23px)/1.26 "DM Sans",sans-serif;color:#f4fcff}
+.enter-services-grid span{font:400 13px/1.8 "DM Sans",sans-serif;color:#b3d0dc}
+.enter-services-bottom{font:400 14px/1.8 "DM Sans",sans-serif;color:#b8cdd7;margin:32px 0 0}
+.enter-services-bottom a{color:#37e6ed}
+.enter-site-footer{background:#030e19;border-top:1px solid rgba(81,211,221,.24);padding:26px 22px 39px;color:#cde9ef}
+.enter-footer-inner{max-width:1190px;margin:auto;display:flex;gap:22px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.enter-footer-inner>a{color:#bde2eb;text-decoration:none;font:750 13px/1.5 "DM Sans",sans-serif}
+.enter-footer-inner .axi-whatsapp-cta{background:#25d366;color:#082814!important;border-radius:8px;padding:14px 23px;font-weight:800}
+.enter-footer-inner a:focus-visible{outline:3px solid #f7fbff;outline-offset:3px}
+@media(max-width:900px){.enter-services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.topbar .axi-wa-entry{padding:9px 12px;min-height:36px;font-size:10px}.enter-services-grid{grid-template-columns:1fr}.enter-services-grid a{min-height:146px;padding:23px}.enter-footer-inner{align-items:flex-start;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){.enter-services-grid a,.topbar .axi-wa-entry{transition:none!important}}
+#chatgpt-open-btn{z-index:75}

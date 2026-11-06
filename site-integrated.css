@@ -64,3 +64,25 @@
  .site-enquiry-handoff .site-handoff-button{width:100%}
 }
 @media(prefers-reduced-motion:reduce){.site-enquiry-handoff a,.site-related-links a{transition:none!important}}
+
+/* AX'ETL contact actions: high-visibility WhatsApp green, accessible contrast. */
+.axi-wa-cta,
+.site-footer .footer-col>a.axi-wa-cta{
+ display:inline-flex;align-items:center;justify-content:center;gap:9px;
+ padding:13px 17px;min-height:45px;border:1px solid #25d366;
+ border-radius:8px;background:#25d366;color:#062a16!important;
+ text-decoration:none!important;font:800 12px/1.25 "DM Sans",sans-serif;
+ box-shadow:0 6px 18px rgba(37,211,102,.16);
+ white-space:nowrap;transition:background .18s ease,transform .18s ease;
+}
+.axi-wa-cta:hover,.site-footer .footer-col>a.axi-wa-cta:hover{
+ background:#67eb96;color:#041f0e!important;transform:translateY(-2px)
+}
+.axi-wa-cta:focus-visible{outline:3px solid white;outline-offset:4px}
+.axi-wa-icon{font-size:19px;line-height:1}
+.site-header .axi-wa-header{margin-left:auto;flex-shrink:0}
+.site-footer .footer-col>a.axi-wa-footer{margin:7px 0 10px;max-width:max-content}
+#mobile-nav .axi-wa-mobile{margin:13px 10px 5px;display:flex;background:#25d366;color:#062a16!important}
+@media(max-width:1100px){.site-header .axi-wa-header{padding:10px 12px;min-height:39px;font-size:11px}}
+@media(max-width:620px){.site-header .axi-wa-header{padding:9px 12px;min-width:40px;min-height:40px}.site-header .axi-wa-header .axi-wa-label{display:none}}
+@media(prefers-reduced-motion:reduce){.axi-wa-cta{transition:none!important}}

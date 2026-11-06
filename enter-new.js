@@ -125,3 +125,17 @@
  document.addEventListener('visibilitychange',()=>document.hidden?video.pause():play());
  play();
 })();
+
+/* AX'ETL entrance: WhatsApp help remains available without leaving AXI's scene. */
+(()=>{
+ 'use strict';
+ const top=document.querySelector('.topbar');
+ if(!top||top.querySelector('.axi-wa-entry'))return;
+ const btn=document.createElement('a');
+ btn.className='axi-wa-cta axi-wa-entry';
+ btn.href='https://wa.me/27713615428?text='+encodeURIComponent("Hello AX’ETL, I’d like to discuss your digital services.");
+ btn.target='_blank';btn.rel='noopener noreferrer';
+ btn.setAttribute('aria-label','Chat with AX’ETL on WhatsApp');
+ btn.textContent='☎ WhatsApp';
+ top.append(btn);
+})();
