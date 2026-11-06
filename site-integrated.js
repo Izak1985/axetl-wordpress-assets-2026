@@ -2,6 +2,18 @@
    Does not create additional forms, use external network calls, or alter server data. */
 (() => {
  'use strict';
+ // Once the cinematic entry becomes the front page, internal Home links must
+ // reach the actual Gutenberg Home page rather than return to the splash.
+ document.querySelectorAll('a[href]').forEach(a=>{
+   const raw=a.getAttribute('href');
+   if(!raw)return;
+   try{
+     const url=new URL(raw,window.location.href);
+     if(url.origin===window.location.origin && url.pathname==='/' && !url.search){
+       a.setAttribute('href','/home-page/'+url.hash);
+     }
+   }catch(_error){}
+ });
  const details=document.querySelector('.nav-services');
  if(details){
    document.addEventListener('click',event=>{
